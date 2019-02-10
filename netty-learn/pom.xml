@@ -7,5 +7,6 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>netty-heartbeat</module>
+		<module>nio-learn</module>
 	</modules>
 </project>
