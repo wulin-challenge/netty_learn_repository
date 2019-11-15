@@ -42,7 +42,7 @@ public class FileDemoClient {
 		clinetHandler = new FileDemoClientHandler();
 		
 		b = new Bootstrap();
-		EventLoopGroup workerGroup = new NioEventLoopGroup();
+		EventLoopGroup workerGroup = new NioEventLoopGroup(16);
 		b.group(workerGroup)
 		 .channel(NioSocketChannel.class)
 		 .handler(new ChannelInitializer<SocketChannel>() {

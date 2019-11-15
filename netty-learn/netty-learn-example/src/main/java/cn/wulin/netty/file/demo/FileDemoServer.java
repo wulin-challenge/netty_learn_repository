@@ -36,8 +36,8 @@ public class FileDemoServer {
 	
 	public Integer server(){
 		ServerBootstrap b= new ServerBootstrap();
-		EventLoopGroup bossGroup = new NioEventLoopGroup(1);
-        EventLoopGroup workerGroup = new NioEventLoopGroup(1);
+		EventLoopGroup bossGroup = new NioEventLoopGroup(16);
+        EventLoopGroup workerGroup = new NioEventLoopGroup(16);
 		b.group(bossGroup,workerGroup)
 		 .channel(NioServerSocketChannel.class)
 	     .option(ChannelOption.SO_BACKLOG,1024)

@@ -143,7 +143,8 @@ public class FileDemoChunkedFile implements ChunkedInput<ByteBuf> {
         if (offset >= endOffset) {
             return null;
         }
-        System.out.println("server readChunk : "+count.incrementAndGet()+" , sort : "+transferSortNumber.get());
+        String name = Thread.currentThread().getName();
+        System.out.println("server readChunk : "+count.incrementAndGet()+" , sort : "+transferSortNumber.get()+" , thread name : "+name);
         
         int chunkSize = (int) Math.min(this.chunkSize, endOffset - offset);
         this.offset = offset + chunkSize;

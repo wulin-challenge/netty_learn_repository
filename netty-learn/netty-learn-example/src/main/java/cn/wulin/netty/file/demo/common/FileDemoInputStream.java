@@ -71,11 +71,10 @@ public class FileDemoInputStream extends InputStream{
 		transferLength = buffer.readInt();
 		
 		buffer = buffer.retainedSlice(buffer.readerIndex(), transferLength);
-		
-		System.out.println("--------------------------- "+transferLength);
-		
 		cumulation.put(buffer,length);
-		System.out.println("client: "+count.incrementAndGet());
+		String name = Thread.currentThread().getName();
+		
+		System.out.println("transferLength : "+transferLength+" , client: "+count.incrementAndGet()+" , thread name : "+name);
 		signal();
 	}
 	
