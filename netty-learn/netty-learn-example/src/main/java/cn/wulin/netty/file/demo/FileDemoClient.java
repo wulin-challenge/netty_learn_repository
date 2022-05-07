@@ -4,14 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.concurrent.CountDownLatch;
 
-import org.apache.commons.io.FileUtils;
-
-import com.alibaba.fastjson.util.IOUtils;
-
-import ch.qos.logback.core.util.FileUtil;
 import cn.wulin.netty.file.demo.codec.FileDemoDecoder;
 import cn.wulin.netty.file.demo.codec.FileDemoEncoder;
 import cn.wulin.netty.file.demo.common.FileDemoInputStream;
@@ -64,7 +58,7 @@ public class FileDemoClient {
 //			RemotingCommand command = new RemotingCommand(1,1,0,"F:/resources/temp/temp4/clientData/m1.zip");
 //			RemotingCommand command = new RemotingCommand(1,1,0,"F:/resources/temp/temp4/clientData/x1.zip");
 //			RemotingCommand command = new RemotingCommand(1,1,0,"F:/resources/temp/temp4/clientData/2.zip");
-			RemotingCommand command = new RemotingCommand(1,1,0,"F:/resources/temp/temp4/clientData/e1.rar");
+			RemotingCommand command = new RemotingCommand(1,1,0,"F:/resources/temp/temp4/clientData/11.zip");
 			
 			
 			
@@ -74,7 +68,7 @@ public class FileDemoClient {
 //			File file = new File("F:/resources/temp/temp4/clientData","3.zip");
 //			File file = new File("F:/resources/temp/temp4/clientData","m2.zip");
 //			File file = new File("F:/resources/temp/temp4/clientData","x2.zip");
-			File file = new File("F:/resources/temp/temp4/clientData","e2.rar");
+			File file = new File("F:/resources/temp/temp4/clientData","11.zip");
 //			File file = new File("F:/resources/temp/temp4/clientData","3.zip");
 			
 			FileDemoClientHandler.fileDemoMap.put(1,is);

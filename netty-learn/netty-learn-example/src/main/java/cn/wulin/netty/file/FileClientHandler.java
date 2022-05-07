@@ -27,7 +27,7 @@ public class FileClientHandler extends ChannelDuplexHandler {
     @Override
     public void channelActive(ChannelHandlerContext ctx) {
          try {
-             raf = new RandomAccessFile("F:/resources/temp/temp4/clientData/e2.rar", "rw");
+             raf = new RandomAccessFile("F:/resources/temp/temp4/clientData/111.txt", "rw");
          } catch (Exception e) {
          	e.printStackTrace();
          }

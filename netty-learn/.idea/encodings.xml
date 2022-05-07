@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-heartbeat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-learn-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-multi-port-transmission" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/all" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/bom" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/buffer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-dns" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-haproxy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-http2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-memcache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-mqtt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-smtp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-socks" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-stomp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/codec-xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/dev-tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/handler-proxy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/microbench" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/netty-all2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/resolver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/resolver-dns" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/tarball" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-autobahn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-http2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-osgi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-native-epoll" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-native-kqueue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-native-unix-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-native-unix-common-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-rxtx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-sctp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport-udt" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,1 @@
+mvn clean install -Dmaven.test.skip=true  -Dmaven.javadoc.skip=true -Dfindbugs.skip=true

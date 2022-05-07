@@ -10,6 +10,7 @@
 		<module>netty-heartbeat</module>
 		<module>nio-learn</module>
 		<module>netty-learn-example</module>
+		<module>netty-multi-port-transmission</module>
 	</modules>
 
 	<dependencyManagement>
@@ -17,7 +18,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all2</artifactId>
-				<!-- <version>4.0.42.Final</version> -->
+				<!-- <version>4.0.42.Final</version>-->
 				<version>4.1.26.Final-SNAPSHOT</version>
 			</dependency>
 			<dependency>

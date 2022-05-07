@@ -25,9 +25,14 @@ import java.util.concurrent.TimeUnit;
 /**
  * Executes {@link Runnable} objects in the caller's thread. If the {@link #execute(Runnable)} is reentrant it will be
  * queued until the original {@link Runnable} finishes execution.
+ * 
+ * <p> 在调用者的线程中执行Runnable对象。 如果execute（Runnable）是可重入的，它将被排队，直到原始Runnable完成执行。
+ * 
  * <p>
  * All {@link Throwable} objects thrown from {@link #execute(Runnable)} will be swallowed and logged. This is to ensure
  * that all queued {@link Runnable} objects have the chance to be run.
+ * 
+ * <p> 从execute（Runnable）抛出的所有Throwable对象都将被吞下并记录下来。 这是为了确保所有排队的Runnable对象都有运行的机会。
  */
 public final class ImmediateEventExecutor extends AbstractEventExecutor {
     private static final InternalLogger logger = InternalLoggerFactory.getInstance(ImmediateEventExecutor.class);
