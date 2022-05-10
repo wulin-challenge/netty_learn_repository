@@ -27,7 +27,7 @@ public class CommandLineService {
 		System.out.println("客户端配对: c2");
 		System.out.println("创建传输文件: c3");
 		System.out.println("开始传输文件: c4");
-		System.out.println("在sendClient端执行发送截屏: c4");
+		System.out.println("在sendClient端执行发送截屏: c5");
 		
 	}
 	
