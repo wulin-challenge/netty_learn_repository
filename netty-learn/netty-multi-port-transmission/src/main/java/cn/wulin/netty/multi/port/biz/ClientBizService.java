@@ -2,6 +2,7 @@ package cn.wulin.netty.multi.port.biz;
 
 import java.io.File;
 import java.io.RandomAccessFile;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +15,14 @@ import cn.wulin.netty.multi.port.biz.vo.ClientPairVO;
 import cn.wulin.netty.multi.port.biz.vo.RegisterChannelVO;
 import cn.wulin.netty.multi.port.codec.DataType;
 import cn.wulin.netty.multi.port.domain.CompleteData;
+import cn.wulin.netty.multi.port.domain.PortSegmentData;
 import cn.wulin.netty.multi.port.domain.PortSegmentStreamData;
 import cn.wulin.netty.multi.port.utils.CmdDownloadProgressBar;
 import cn.wulin.netty.multi.port.utils.CmdDownloadProgressBar.ProgressInfo;
 import cn.wulin.netty.multi.port.utils.CommonUtil;
+import cn.wulin.netty.multi.port.utils.ExtensionLoader;
+import cn.wulin.netty.multi.port.utils.GzipUtil;
+import cn.wulin.netty.multi.port.utils.ScreenRobotUtil;
 import io.netty.channel.Channel;
 
 public class ClientBizService {
@@ -58,12 +63,63 @@ public class ClientBizService {
 			case "c4":
 				fileTransfer();
 				break;
+			case "c5":
+//				Thread thread = new Thread(()->{
+//					while(true) {
+//						long start = System.currentTimeMillis();
+//						screenTransfer();
+//						long end = System.currentTimeMillis();
+//						System.out.println("截取时间--"+(end-start));
+//					}
+//				});
+//				
+//				thread.start();
+				
+				screenTransfer();
+				
+				break;
 			default:
 				break;
 			}
 		});
 	}
 	
+
+	public void screenTransfer() {
+		
+		byte[] screen = ScreenRobotUtil.getScreenSnapshot();
+		screen = GzipUtil.compress(screen);
+		
+		long dataTotalLength = screen.length;
+		long perLength = 1024*50; //50kb
+		int segmentCount = getSegmentCount(dataTotalLength,perLength);
+		String requestId = CommonUtil.getUUID();
+		
+		for(int i=0;i<segmentCount;i++) {
+			PortSegmentData data = new PortSegmentData();
+			data.setDataTotalLength(dataTotalLength);
+			data.setClientId(clientConnect.getClientId());
+			data.setRequestId(requestId);
+			data.setSegmentCount(segmentCount);
+			data.setCurrentSegment(i);
+			data.setDataStartPosition(getDataStartPosition(i, perLength));
+			data.setDataLength(getDataLength(dataTotalLength, segmentCount, i, perLength));
+			data.setData(getData(data, screen));
+			
+			Channel fileChannel = getChannel(i,clientConnect.getScreenChannel());
+			
+			fileChannel.writeAndFlush(data);
+		}
+		
+//		try {
+//			Thread.sleep(300);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+	}
+
 	private void createFileTransfer(String filePath) {
 		Channel channel = clientConnect.getCmdChannel();
 		String requestId = CommonUtil.getUUID();
@@ -136,7 +192,7 @@ public class ClientBizService {
 				data.setDataLength(getDataLength(dataTotalLength, segmentCount, i, perLength));
 				data.setData(getData(data, randomFile));
 				
-				Channel fileChannel = getFileChannel(i);
+				Channel fileChannel = getChannel(i,clientConnect.getFileChannel());
 				
 				currentTransferFile.addCurrentLength(data.getDataLength());
 				currentTransferFile.setTotalLength(dataTotalLength);
@@ -152,14 +208,21 @@ public class ClientBizService {
 		
 	}
 	
-	private Channel getFileChannel(int currentSegment) {
-		int channelSize = clientConnect.getFileChannel().size();
+	private Channel getChannel(int currentSegment,List<Channel> channelList) {
+		int channelSize = channelList.size();
 		if(channelSize == 1) {
-			return clientConnect.getFileChannel().get(0);
+			return channelList.get(0);
 		}
 		
 		int index = currentSegment%channelSize;
-		return clientConnect.getFileChannel().get(index);
+		return channelList.get(index);
+	}
+	
+	private byte[] getData(PortSegmentData data,byte[] screenData) {
+		byte[] dest = new byte[(int)data.getDataLength()];
+		
+		System.arraycopy(screenData, (int)data.getDataStartPosition(), dest, 0, (int)data.getDataLength());
+		return dest;
 	}
 	
 	private byte[] getData(PortSegmentStreamData data,RandomAccessFile randomFile) {
@@ -242,6 +305,7 @@ public class ClientBizService {
 			registerChannel(channel2, new RegisterChannelVO(clientConnect.getClientId(), "file"));
 		}
 		
+		ExtensionLoader.setInstance(ClientConnect.class, clientConnect);
 	}
 	
 	private void registerChannel(Channel channel,RegisterChannelVO registerChannel) {

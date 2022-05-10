@@ -13,6 +13,10 @@ public class ReceiveClient {
 	private static Client CLIENT = new Client(new ClientHandler());
 	
 	public static void main(String[] args) {
+		ScreenWindow window =ScreenWindow.getScreenWindow();
+		
+		window.launch();
+		
 		CLIENT.client();
 		new ClientBizService(CLIENT);
 	}

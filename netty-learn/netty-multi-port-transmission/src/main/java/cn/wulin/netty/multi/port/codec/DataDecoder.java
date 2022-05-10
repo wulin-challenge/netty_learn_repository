@@ -96,7 +96,11 @@ public class DataDecoder extends ByteToMessageDecoder{
 		data.setSegmentCount(in.readInt());
 		data.setCurrentSegment(in.readInt());
 		
-		long realLength = data.getLength()-4-8-32-32-4-4;
+		data.setDataTotalLength(in.readLong());
+		data.setDataStartPosition(in.readLong());
+		data.setDataLength(in.readLong());
+		
+		long realLength = data.getLength()-4-8-32-32-4-4-8-8-8;
 		byte[] realData = new byte[(int)realLength];
 		in.readBytes(realData);
 		data.setData(realData);

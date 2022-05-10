@@ -27,6 +27,16 @@ public class DataType {
 	 */
 	public static final int CREATE_FILE_TRANSFER = 5;
 	
+	/**
+	 * 创建屏幕传输
+	 */
+	public static final int CREATE_SCREEN_TRANSFER = 6;
+	
+	/**
+	 * 通知发送屏幕数据
+	 */
+	public static final int NOTIFY_SEND_SCREEN = 7;
+	
 	
 	
 

@@ -7,7 +7,7 @@ public class ClientProperties {
 	/**
 	 * 屏幕传输管道数量
 	 */
-	private int screenChannel = 1;
+	private int screenChannel = 3;
 	
 	/**
 	 * 文件传输管道数量

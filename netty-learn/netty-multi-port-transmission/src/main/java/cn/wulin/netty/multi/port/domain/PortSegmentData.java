@@ -16,7 +16,7 @@ public class PortSegmentData implements Serializable{
 	private int type = CodecType.CODEC_PORT_SEGMENT_DATA;
 	
 	/**
-	 * 数据长度,(包括type和length)
+	 * 数据长度,指的是当前段数据的长度,(包括type和length)
 	 */
 	private long length = 0L;
 	
@@ -39,6 +39,18 @@ public class PortSegmentData implements Serializable{
 	 * 当前是那个数据段
 	 */
 	private int currentSegment = -1;
+	
+	/**
+	 * 表示要传输数据的总长度
+	 */
+	private long dataTotalLength = 0L;
+	
+	private long dataStartPosition = 0L;
+	
+	/**
+	 * 表示当前传输数据的长度
+	 */
+	private long dataLength = 0L;
 	
 	/**
 	 * 真正的数据
@@ -98,5 +110,29 @@ public class PortSegmentData implements Serializable{
 
 	public void setClientId(String clientId) {
 		this.clientId = clientId;
+	}
+
+	public long getDataTotalLength() {
+		return dataTotalLength;
+	}
+
+	public void setDataTotalLength(long dataTotalLength) {
+		this.dataTotalLength = dataTotalLength;
+	}
+
+	public long getDataStartPosition() {
+		return dataStartPosition;
+	}
+
+	public void setDataStartPosition(long dataStartPosition) {
+		this.dataStartPosition = dataStartPosition;
+	}
+
+	public long getDataLength() {
+		return dataLength;
+	}
+
+	public void setDataLength(long dataLength) {
+		this.dataLength = dataLength;
 	}
 }

@@ -51,13 +51,16 @@ public class DataEncoder extends MessageToByteEncoder<Object>{
 
 	private void encodePortSegmentData(ChannelHandlerContext ctx, PortSegmentData msg, ByteBuf out) throws Exception {
 		
-		long length = 4+8+32+32+4+4+msg.getData().length;
+		long length = 4+8+32+32+4+4+8+8+8+msg.getData().length;
 		out.writeInt(msg.getType());
 		out.writeLong(length);
 		out.writeBytes(msg.getClientId().getBytes("UTF-8")); //32 位的uuid
 		out.writeBytes(msg.getRequestId().getBytes("UTF-8")); //32 位的uuid
 		out.writeInt(msg.getSegmentCount());
 		out.writeInt(msg.getCurrentSegment());
+		out.writeLong(msg.getDataTotalLength());
+		out.writeLong(msg.getDataStartPosition());
+		out.writeLong(msg.getDataLength());
 		out.writeBytes(msg.getData());
 	}
 	

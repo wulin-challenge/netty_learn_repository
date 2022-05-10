@@ -9,7 +9,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cn.wulin.netty.multi.port.Server;
 import cn.wulin.netty.multi.port.biz.ClientConnect;
 import cn.wulin.netty.multi.port.domain.CompleteData;
 import cn.wulin.netty.multi.port.domain.PortSegmentData;
@@ -18,6 +17,8 @@ import cn.wulin.netty.multi.port.server.ServerDataHandler;
 import cn.wulin.netty.multi.port.server.data.handler.ClientPairHandler;
 import cn.wulin.netty.multi.port.server.data.handler.CreateFileTransferHandler;
 import cn.wulin.netty.multi.port.server.data.handler.RegisterChannelHandler;
+import cn.wulin.netty.multi.port.server.data.handler.ServerNotifySendScreenHandler;
+import cn.wulin.netty.multi.port.utils.CmdDownloadProgressBar;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandler.Sharable;
@@ -48,6 +49,8 @@ public class ServerHandler extends ChannelDuplexHandler{
 	
 	private static Object lock = new Object();
 	
+	private CmdDownloadProgressBar downloadSpeed = new CmdDownloadProgressBar("", 0L);
+	
 	public ServerHandler() {
 		super();
 		initDataHandler();
@@ -57,14 +60,13 @@ public class ServerHandler extends ChannelDuplexHandler{
 		DATA_HANDLER.add(new RegisterChannelHandler());
 		DATA_HANDLER.add(new ClientPairHandler());
 		DATA_HANDLER.add(new CreateFileTransferHandler());
+		DATA_HANDLER.add(new ServerNotifySendScreenHandler());
 	}
 
 	@Override
     public void channelActive(ChannelHandlerContext ctx) {
 		
 	}
-	
-	
 
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
@@ -88,6 +90,8 @@ public class ServerHandler extends ChannelDuplexHandler{
 		}else if(msg instanceof PortSegmentData) {
 			PortSegmentData data = (PortSegmentData)msg;
 			
+			portSegmentHandler(ctx, data);
+			
 		}else if(msg instanceof PortSegmentStreamData) {
 			PortSegmentStreamData data = (PortSegmentStreamData)msg;
 			portSegmentStreamHandler(ctx, data);
@@ -95,13 +99,27 @@ public class ServerHandler extends ChannelDuplexHandler{
 		}
 	}
 	
+	private void portSegmentHandler(ChannelHandlerContext ctx, PortSegmentData data) {
+		String receiveClientId = data.getClientId();
+		String sendClientId = getSendClientId(receiveClientId);
+		int currentSegment = data.getCurrentSegment();
+		
+		ClientConnect clientConnect = ServerHandler.getClientConnect(sendClientId);
+		Channel fileChannel = getChannel(currentSegment, clientConnect.getScreenChannel());
+		fileChannel.writeAndFlush(data);
+		
+		downloadSpeed.start();
+		downloadSpeed.setTotalLength(data.getDataTotalLength());
+		downloadSpeed.addCurrentLength(data.getLength());
+	}
+
 	private void portSegmentStreamHandler(ChannelHandlerContext ctx,PortSegmentStreamData data) {
 		String receiveClientId = data.getClientId();
 		String sendClientId = getSendClientId(receiveClientId);
 		int currentSegment = data.getCurrentSegment();
 		
 		ClientConnect clientConnect = ServerHandler.getClientConnect(sendClientId);
-		Channel fileChannel = getFileChannel(currentSegment, clientConnect);
+		Channel fileChannel = getChannel(currentSegment, clientConnect.getFileChannel());
 		fileChannel.writeAndFlush(data);
 		
 		CreateFileTransferHandler.currentTransferFile.setTotalLength(data.getDataTotalLength());
@@ -109,14 +127,14 @@ public class ServerHandler extends ChannelDuplexHandler{
 		CreateFileTransferHandler.progressBar.start();
 	}
 	
-	private Channel getFileChannel(int currentSegment,ClientConnect clientConnect) {
-		int channelSize = clientConnect.getFileChannel().size();
+	private Channel getChannel(int currentSegment,List<Channel> channelList) {
+		int channelSize = channelList.size();
 		if(channelSize == 1) {
-			return clientConnect.getFileChannel().get(0);
+			return channelList.get(0);
 		}
 		
 		int index = currentSegment%channelSize;
-		return clientConnect.getFileChannel().get(index);
+		return channelList.get(index);
 	}
 	
 	/**

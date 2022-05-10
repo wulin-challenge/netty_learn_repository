@@ -4,5 +4,5 @@ public class PuppetDynamicSetting {
     /**
      * 清晰度[10,100]
      */
-    public static int quality = 10;;
+    public static int quality = 10;
 }

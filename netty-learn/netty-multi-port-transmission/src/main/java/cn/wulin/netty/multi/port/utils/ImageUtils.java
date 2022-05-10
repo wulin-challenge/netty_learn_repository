@@ -189,7 +189,7 @@ public class ImageUtils {
 	public static BufferedImage getImageFromByteArray(byte[] data){
 		try {
 			final ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(data);
-			return Thumbnails.of(byteArrayInputStream).scale(1f).outputFormat("png").asBufferedImage();
+			return Thumbnails.of(byteArrayInputStream).scale(1f).outputFormat("jpg").asBufferedImage();
 		}catch (IOException e){
 			throw new RuntimeException(e);
 		}

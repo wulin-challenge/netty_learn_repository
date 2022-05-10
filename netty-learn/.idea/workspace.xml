@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="549e1035-c363-44ab-923a-66f76fa6c80a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/netty-learn-example/src/main/java/cn/wulin/netty/file/FileClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-learn-example/src/main/java/cn/wulin/netty/file/FileClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-learn-example/src/main/java/cn/wulin/netty/file/demo/FileDemoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-learn-example/src/main/java/cn/wulin/netty/file/demo/FileDemoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/common/src/main/java/io/netty/util/concurrent/ImmediateEventExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/common/src/main/java/io/netty/util/concurrent/ImmediateEventExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-autobahn/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-autobahn/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-http2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/testsuite-http2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport/src/main/java/io/netty/channel/group/ChannelGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport/src/main/java/io/netty/channel/group/ChannelGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/domain/PortSegmentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/domain/PortSegmentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/server/data/handler/ClientPairHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/server/data/handler/ClientPairHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CmdDownloadProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CmdDownloadProgressBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/GzipUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/GzipUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/ImageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/PuppetDynamicSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/PuppetDynamicSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/test/java/cn/wulin/netty/multi/port/test/TestScreenImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/test/java/cn/wulin/netty/multi/port/test/TestScreenImage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/netty-heartbeat/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,36 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/client/data/handler/ClientCreateFileTransferHandler.java">
+        <entry file="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport/src/main/java/io/netty/channel/ChannelHandlerContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-              <folding>
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1716#1717#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="91" column="105" selection-start-line="91" selection-start-column="105" selection-end-line="91" selection-end-column="105" />
-              <folding>
-                <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#3426#3427#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-106">
-              <caret line="125" column="65" selection-start-line="125" selection-start-column="65" selection-end-line="125" selection-end-column="65" />
+            <state relative-caret-position="3360">
+              <caret line="161" column="17" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -101,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="216">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -110,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/vo/ClientCreateFileTransferVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="1584">
               <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
             </state>
           </provider>
@@ -119,12 +102,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="1608">
               <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1266#1638#0" expanded="true" />
-                <element signature="e#1637#1638#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,22 +114,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="216">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/pom.xml">
-          <provider selected="true" editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/GzipUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-524">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ScreenCanvasPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="216">
               <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
@@ -170,6 +187,8 @@
         <option value="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientProperties.java" />
         <option value="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java" />
         <option value="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport/src/main/java/io/netty/channel/ChannelDuplexHandler.java" />
+        <option value="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java" />
       </list>
     </option>
   </component>
@@ -180,10 +199,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1750" />
+    <option name="width" value="962" />
     <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -192,6 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -243,27 +262,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="port" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-multi-port-transmission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="port" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-multi-port-transmission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="port" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,33 +273,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="port" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-multi-port-transmission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="port" type="462c0819:PsiDirectoryNode" />
               <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1651910086795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1652158571081" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -318,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SendClient">
+  <component name="RunManager" selected="Application.ReceiveClient">
     <configuration name="CmdDownloadProgressBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.wulin.netty.multi.port.utils.CmdDownloadProgressBar" />
       <module name="netty-multi-port-transmission" />
@@ -360,8 +348,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SendClient" />
         <item itemvalue="Application.ReceiveClient" />
+        <item itemvalue="Application.SendClient" />
         <item itemvalue="Application.CmdDownloadProgressBar" />
       </list>
     </recent_temporary>
@@ -377,17 +365,21 @@
       <option name="presentableId" value="Default" />
       <updated>1651856514271</updated>
       <workItem from="1651856520109" duration="5933000" />
-      <workItem from="1651885552398" duration="11030000" />
+      <workItem from="1651885552398" duration="11032000" />
+      <workItem from="1651981332663" duration="170000" />
+      <workItem from="1651981545059" duration="1211000" />
+      <workItem from="1652146757044" duration="6199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16963000" />
+    <option name="totallyTimeSpent" value="24545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-10" y="0" width="962" height="980" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25294748" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31573033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -398,7 +390,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3227633" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.53251535" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -462,36 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/pom.xml">
-      <provider selected="true" editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1266#1638#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../../../../../programming/java/jdk/jdk1.8/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -506,31 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="125" column="65" selection-start-line="125" selection-start-column="65" selection-end-line="125" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/vo/ClientCreateFileTransferVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/client/data/handler/ClientCreateFileTransferHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="960">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
             <element signature="e#1682#1683#0" expanded="true" />
             <element signature="e#1716#1717#0" expanded="true" />
@@ -538,14 +479,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../programming/java/jdk/jdk1.8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/domain/PortSegmentStreamData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport/src/main/java/io/netty/channel/ChannelDuplexHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="91" column="105" selection-start-line="91" selection-start-column="105" selection-end-line="91" selection-end-column="105" />
+        <state relative-caret-position="2194">
+          <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma/transport/src/main/java/io/netty/channel/ChannelHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="161" column="17" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/vo/ClientCreateFileTransferVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1608">
+          <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
           <folding>
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#3426#3427#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/pom.xml">
+      <provider selected="true" editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/GzipUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ScreenCanvasPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
         </state>
       </provider>
     </entry>

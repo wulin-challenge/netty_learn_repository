@@ -27,7 +27,9 @@ public class ClientPairHandler implements ServerDataHandler{
 
 		String json = new String(data.getData(), CommonUtil.getCharset());
 		ClientPairVO cp = JSON.parseObject(json, ClientPairVO.class);
+		//相互配对
 		ServerHandler.getRemoteConnectPair().put(cp.getClientId(), cp.getSendClientId());
+		ServerHandler.getRemoteConnectPair().put(cp.getSendClientId(), cp.getClientId());
 		
 		System.out.println("成功配对: 接收端:"+cp.getClientId()+" , 发送端: "+cp.getSendClientId());
 	}

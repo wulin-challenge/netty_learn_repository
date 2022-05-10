@@ -27,7 +27,17 @@ public class TestScreenImage {
     public static void main(String[] args) throws IOException {
     	TestScreenImage ts = new TestScreenImage();
     	
+    	
+    	
     	byte[] screenSnapshot = ts.getScreenSnapshot();
+    	
+    	long start = System.currentTimeMillis();
+    	byte[] screenSnapshot2 = ts.getScreenSnapshot();
+    	byte[] screenSnapshot3 = ts.getScreenSnapshot();
+    	byte[] screenSnapshot4 = ts.getScreenSnapshot();
+    	
+    	long end = System.currentTimeMillis();
+    	System.out.println((end-start));
     	
     	File origin = new File("F:/resources/temp/temp4/receiveData/","origin.txt");
     	File zip = new File("F:/resources/temp/temp4/receiveData/","zip.txt");
@@ -39,8 +49,8 @@ public class TestScreenImage {
     	
     	BufferedImage convertByteArrayToImage = ImageUtils.convertByteArrayToImage(GzipUtil.uncompress(jzlib));
     	
-    	File image = new File("F:/resources/temp/temp4/receiveData/",System.currentTimeMillis()+".png");
-    	ImageIO.write(convertByteArrayToImage, "png", image);
+    	File image = new File("F:/resources/temp/temp4/receiveData/",System.currentTimeMillis()+".jpg");
+    	ImageIO.write(convertByteArrayToImage, "jpg", image);
     	
 	}
 
