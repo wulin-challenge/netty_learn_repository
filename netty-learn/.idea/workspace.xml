@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="549e1035-c363-44ab-923a-66f76fa6c80a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/ReceiveClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/SendClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientBizService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/biz/ClientProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/codec/DataType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/domain/PortSegmentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/domain/PortSegmentData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/handler/ServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/server/data/handler/ClientPairHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/server/data/handler/ClientPairHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CmdDownloadProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CmdDownloadProgressBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/GzipUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/GzipUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/ImageUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/PuppetDynamicSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/main/java/cn/wulin/netty/multi/port/utils/PuppetDynamicSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-multi-port-transmission/src/test/java/cn/wulin/netty/multi/port/test/TestScreenImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-multi-port-transmission/src/test/java/cn/wulin/netty/multi/port/test/TestScreenImage.java" afterDir="false" />
-    </list>
+    <list default="true" id="549e1035-c363-44ab-923a-66f76fa6c80a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/netty-heartbeat/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-multi-port-transmission/target/" />
@@ -284,7 +265,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1652158571081" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1652158572777" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../netty-source/netty-4.1-yudaoyuanma" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -368,12 +349,12 @@
       <workItem from="1651885552398" duration="11032000" />
       <workItem from="1651981332663" duration="170000" />
       <workItem from="1651981545059" duration="1211000" />
-      <workItem from="1652146757044" duration="6199000" />
+      <workItem from="1652146757044" duration="6675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24545000" />
+    <option name="totallyTimeSpent" value="25021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="962" height="980" extended-state="0" />
