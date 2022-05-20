@@ -25,7 +25,24 @@ public class TestScreenImage {
     private Toolkit toolkit;
     
     public static void main(String[] args) throws IOException {
-    	TestScreenImage ts = new TestScreenImage();
+    	//testScreenImage();
+    	testFile();
+	}
+    
+    
+
+    private static void testFile() throws IOException {
+    	//F:\resources\temp\temp4\screenData
+    	File origin = new File("F:/resources/temp/temp4/screenData/","1.jpg");
+    	File zip = new File("F:/resources/temp/temp4/screenData/","2.jpg");
+    	
+    	byte[] data = FileUtils.readFileToByteArray(origin);
+    	
+    	byte[] jzlib = GzipUtil.compress(data);
+    	FileUtils.writeByteArrayToFile(zip, jzlib);
+    }
+	private static void testScreenImage() throws IOException {
+		TestScreenImage ts = new TestScreenImage();
     	
     	
     	
@@ -51,7 +68,6 @@ public class TestScreenImage {
     	
     	File image = new File("F:/resources/temp/temp4/receiveData/",System.currentTimeMillis()+".jpg");
     	ImageIO.write(convertByteArrayToImage, "jpg", image);
-    	
 	}
 
     public TestScreenImage(){
